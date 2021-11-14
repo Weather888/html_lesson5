@@ -1,0 +1,287 @@
+/* обнуляем все элементы */
+			* 
+				{
+				margin:0;
+				padding:0;
+				outline:none;
+				}  
+				
+/* --- Общие стили --- */ 
+			
+			html 
+				{
+				font-size:75%;
+				height:100%;
+				} 
+			body 
+				{
+				font:normal 1em/1.3 arial, helvetica, sans-serif;
+				color:#333;height:100%;
+				background:#f0f0f0;
+				padding-left: 15px;
+				} 
+			a 
+				{
+          /*color: hotpink;*/
+				color:#009A63;
+				}
+			aside:hover a, footer:hover a, p:hover a 
+				{
+          color:#009B76;
+				} 
+			a:hover 
+				{
+				text-decoration:none;
+				color:#009B76;
+				} 
+			abbr 
+				{
+				border-bottom:1px dotted #009A63;
+				cursor:help;
+				} 
+			h1, h2, h3, h4, h5, h6 
+									{
+									font-weight:normal;
+									line-height:1;
+									margin:4px 0 12px;
+									padding:4px;
+									color:		#009A63; 
+;
+									} 
+			h1 
+				{
+			font-size: 5em;
+      text-align: center;
+      padding-top: 40px;
+      padding-left: 250px;
+      color: green;
+				} 
+			h2 + a 
+					{
+					margin-bottom:10px;
+					}
+			h3 {
+				font-weight: bold;
+			}
+			li 
+				{
+				margin-bottom:10px;
+				}
+			p 
+				{
+				text-align:justify;
+				word-spacing:.1ex;
+				line-height:1.6;
+				padding-left:4px;
+				margin-bottom:1em;
+				} 
+			ul 
+				{
+				list-style:none;
+				} 
+			ol 
+				{
+				list-style-position:inside;
+				}
+			.video 
+					{
+					 margin: 0 auto; 
+					 text-align: center;
+					}
+			summary 
+					{
+					margin-left:1em;
+					font-weight:bold;
+          color: #008080;
+					}
+			form 
+				{
+				margin:1em;
+				padding:.5em;
+				}
+			input[id=contact_name]
+								{
+								padding-left:5px;
+								margin-left:53px;
+								}
+								
+			input[id=contact_email]
+								{
+								padding-left:5px;
+								margin-left:41px;
+								}
+			input[id=contact_phone]
+								{
+								padding-left:5px;
+								margin-left:26px;
+								}
+			input[type=submit] 
+								{
+								border-radius:10px;
+								color: #009A63;
+								padding:0.5em;
+								margin-left:2em;
+								}
+			/* делаем семантические тэги - блочными */ 	
+			header, nav, section, article, aside, footer 
+														{
+														display:block;
+														position:relative;
+														} 
+														
+			/* выравниваем страницу по центру, делаем отступы и цвет фона */ 			
+			#main 
+				{
+				width:950px;
+				min-height:100%;
+				padding:0 24px;
+				margin:0 auto;
+				background:#fff;
+				} 
+				
+			/* пишем класс для шапки - header */ 			
+			.h 
+				{
+				overflow:hidden;
+				height:70px;
+				padding:35px 25px 0;
+				} 
+				
+			/* меню навигации */ 
+			nav {
+      width: 30%;
+      margin-top: 30px;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 250px;
+      display: block;
+      /* border-radius:20px;*/
+    }
+    nav a {
+      font-weight: bold;
+      font-size: 20pt;
+      text-decoration: none;
+      color: green;
+      padding-top: 10px;
+      width: 100%;
+      float: left;
+      margin: 0px 10px 0px 10px;
+      border: 0;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+			
+			/* область основного контента */ 
+			section 
+					{
+					overflow:hidden;
+					}
+					
+			/* стиль для картинки */ 
+			.image 
+					{
+					width: 160px; 
+          margin-top: 15px;
+          float: left;
+          padding-left: 10px;
+					} 
+          .image1 
+					{
+					width: 200px; 
+          margin-top: 30px;
+          margin-bottom: 40px;
+          padding-left: 10px;
+					} 
+          .contact
+          {
+            line-height: 350%;
+          }
+			figure {
+					padding: 10px; /* Поля вокруг */
+					display: block; /* Блочный элемент */
+					width: 550px; /* Ширина */
+					margin: 0 10px 10px 0; /* Отступы */
+					text-align: center; /* Выравнивание по центру */
+				   }
+			figcaption {
+						color: #009A63; /* Цвет текста */
+						font-size:1.2em;
+					   }		
+			 mark {
+					background: #ffec82;
+					padding: 1px 3px;
+					border: 1px dashed #333;
+				   }
+			/* внутренняя область контента */ 
+			section section 
+							{
+							float:left;
+							width:740px;
+							} 
+							
+			/* левая часть */ 
+		
+      aside{
+          width: 20%;
+          padding:20px 0 0 7px;
+          float: left;
+         
+         /* display: block;*/
+      /* border-radius:20px;*/
+    }
+				
+			/* нижняя часть - footer */ 
+			footer 
+					{
+					height:50px;
+					padding:25px 25px 0;
+					margin:20px 0 0;
+					border-top:1px solid #009B76;
+					} 
+					
+			/* стили для выделения областей HTML */ 
+			.tag 
+				{
+				position:absolute;
+				right:6px;top:2px;
+				font-size:11px;
+				font-style:normal;
+				} 
+    
+			header:hover, nav:hover, section:hover, article:hover, aside:hover, footer:hover 
+																							{
+																							background:#FFC327;
+																							color:#fff;
+																							} 
+			section section:hover, section aside:hover 
+														{
+														background:#FFD25D;
+														} 
+			section article:hover 
+									{
+									background:#FFC327;
+									} 
+			article header:hover 
+									{
+									background:#FFD25D;
+									color:#777;
+									} 
+			section article .tag 
+								{
+								top:12px;
+								} 
+			article header .tag 
+								{
+								right:70px;
+								top:2px;
+								} 
+			aside .tag 
+						{
+						top:12px;
+						}
+			.element-invisible { 
+				display: none;
+			}
+			
